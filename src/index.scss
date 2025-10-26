@@ -1,0 +1,181 @@
+// 🎯 Global Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria;
+}
+
+// 🎨 Variables
+$primary-blue: #3b82f6;
+$gray-bg: rgb(241, 245, 249);
+$text-gray: gray;
+
+// 🌐 Layout
+.main-container {
+  margin: 70px 0;
+
+  .container {
+    background-color: $gray-bg;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 139px;
+
+    .first-child {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .child-head {
+        text-align: start;
+      }
+
+      .child-para {
+        max-width: 451px;
+      }
+    }
+
+    .boxes {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+
+      .boxes1 {
+        &-content {
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          padding: 30px;
+          border-radius: 20px;
+
+          &:hover {
+            box-shadow: 40px 20px 20px rgba(0, 0, 0, 0.05);
+            transition: 0.3s all ease-in-out;
+          }
+
+          .content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .content-heading {
+              font-size: 20px;
+              text-decoration: underline;
+              color: blue;
+              font-weight: 600;
+            }
+
+            .content-para {
+              max-width: 276px;
+              font-size: 20px;
+              color: $text-gray;
+            }
+          }
+
+          .content-bottom {
+            .bottom {
+              display: flex;
+              flex-direction: row;
+              gap: 20px;
+
+              .bottom1 {
+                height: 57px;
+                width: 55px;
+                background-color: $primary-blue;
+                border-radius: 20px;
+                text-align: center;
+                justify-content: center;
+                color: white;
+                display: flex;
+                flex-direction: column;
+              }
+
+              .bottom-step {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                display: flex;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 📱 Responsive Styles
+@media (max-width: 468px) {
+  .container {
+    flex-direction: column;
+    padding: 16px;
+
+    .first-child,
+    .child-head,
+    .content,
+    .content-heading {
+      text-align: center;
+    }
+
+    .boxes1 {
+      align-items: center;
+    }
+
+    .bottom {
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 469px) and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 16px;
+
+    .first-child,
+    .child-head,
+    .content,
+    .content-heading {
+      text-align: center;
+    }
+
+    .boxes1 {
+      align-items: center;
+    }
+
+    .bottom {
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    padding: 16px;
+
+    .first-child,
+    .child-head,
+    .content,
+    .content-heading {
+      text-align: center;
+    }
+
+    .boxes {
+      flex-direction: row;
+    }
+
+    .boxes1 {
+      align-items: center;
+    }
+
+    .bottom {
+      justify-content: center;
+    }
+  }
+}
