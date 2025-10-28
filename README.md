@@ -1,7 +1,7 @@
-# Live Website Section (React  Vite and SCSS)
+# Live Website Section (React  Vite and SCSS).
 
 A responsive **Live Website Section** built using **React (Vite)** and styled with **SCSS (Sass)**.  
-This section demonstrates a modern flexbox layout explaining the **2-week trial process** — fully responsive and easy to customize.
+This section demonstrates a modern flexbox layout explaining the **2-week trial process** fully responsive and easy to customize.
 
 ---
 
